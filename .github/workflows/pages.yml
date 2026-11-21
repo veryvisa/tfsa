@@ -24,3 +24,5 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000   # 11-09：学院站产物 500MB+，默认 10 分钟内 Pages 处理不完、部署被取消（tax-corporate、foi、realtor）
